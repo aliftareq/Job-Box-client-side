@@ -12,7 +12,7 @@ const Signup = () => {
   const navigate = useNavigate();
   const [disabled, setDisabled] = useState(true);
   const dispatch = useDispatch()
-  const { isError, error } = useSelector((state) => state.auth)
+  const { email, isLoading, isError, error } = useSelector((state) => state.auth)
 
   useEffect(() => {
     if (
